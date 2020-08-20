@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <zimo-btn types="warning">警告按钮</zimo-btn>
+    <!-- <zimo-btn types="warning">警告按钮</zimo-btn>
     <zimo-btn types="primary">常用按钮</zimo-btn>
     <zimo-btn types="success">成功按钮</zimo-btn>
     <zimo-btn types="info">灰色按钮</zimo-btn>
@@ -9,7 +9,7 @@
     <zimo-btn types="warning" size="medium">警告按钮</zimo-btn>
     <zimo-btn types="primary" size="small">常用按钮</zimo-btn>
     <zimo-btn types="success" size="mini">成功按钮</zimo-btn>
-    <zimo-btn types="info">灰色按钮</zimo-btn>
+    <zimo-btn types="info">灰色按钮</zimo-btn> -->
     <div>{{ $store.state.num }}</div>
     <Child></Child>
     <button @click="$store.dispatch('ADD_NUM',10)">actions+10</button>
