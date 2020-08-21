@@ -1,6 +1,6 @@
 <template>
   <div class="child">
-    <div>{{ $store.state.num }}</div>
+    <div>{{ $store.state.money.num }}</div>
   </div>
 </template>
 
@@ -8,6 +8,14 @@
 // import zimoBtn from './client/button/button';
 export default {
   name: 'child',
+  data(){
+    return {
+      
+    }
+  },
+  mounted(){
+    console.log(this,'111')
+  }
   // components:{zimoBtn}
 }
 </script>

@@ -19,6 +19,7 @@ const getters = {
     }
 }
 export {
+    // namespaced:true,
     state,
     mutations,
     actions,

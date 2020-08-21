@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 // import zimoBtn from './client/button/button';
 import ElementUI from 'element-ui';
+import router from './router';
 // import { zimoBtn } from 'zimo-button';
 import 'element-ui/lib/theme-chalk/index.css';
 // console.log(zimoBtn,'===')
@@ -11,6 +12,8 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 new Vue({
+  el:'#app',
   store,
+  router,
   render: h => h(App),
-}).$mount('#app')
+})
