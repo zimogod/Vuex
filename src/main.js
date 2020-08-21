@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import zimoBtn from './client/button/button';
+// import zimoBtn from './client/button/button';
 import ElementUI from 'element-ui';
 // import { zimoBtn } from 'zimo-button';
 import 'element-ui/lib/theme-chalk/index.css';

@@ -11,8 +11,11 @@
     <zimo-btn types="success" size="mini">成功按钮</zimo-btn>
     <zimo-btn types="info">灰色按钮</zimo-btn> -->
     <!-- <div>{{ $store.state.num }}</div> -->
-    <div>{{ num }}</div>
-    <div>{{ names }}</div>
+    <div>{{ aaa }}</div>
+     <div>{{ $store.state.home.num }}</div>
+      <div>{{ home.num }}</div>
+       <div>{{ home.num }}</div>
+       <div>{{ bbb }}</div>
     <Child></Child>
     <div>{{ nums }}</div>
     <!-- 通过dispatch派发actions中的方法 -->
@@ -26,19 +29,25 @@
 
 <script>
 import Child from './components/child';
-import { mapState,mapMutations,mapActions } from 'vuex';
+import { mapState,mapMutations,mapActions,mapGetters } from 'vuex';
 // import zimoBtn from './client/button/button';
 export default {
   name: 'App',
   components:{Child},
   data(){
     return {
-      nums:1000
+      nums:1000,
+      num2:2000
     }
   },
   computed:{
-    ...mapState(['num','names'])
+    ...mapState(['home']),
+    ...mapGetters(['aaa']),
+    bbb(){
+      return this.num2 + 100;
+    }
   },
+  // computed:mapState(['num','names']),
   methods:{
     ...mapMutations(['addNum']),
     ...mapActions(['ADD_NUM']),
