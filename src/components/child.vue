@@ -13,9 +13,6 @@ export default {
       
     }
   },
-  mounted(){
-    console.log(this,'111')
-  }
   // components:{zimoBtn}
 }
 </script>

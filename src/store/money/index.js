@@ -1,5 +1,7 @@
 // const addNum = 'addNum';
 // const ADD_NUM = 'ADD_NUM';
+
+const namespaced = true;
 const state = {
     num:300
 }
@@ -19,6 +21,7 @@ const getters = {
     }
 }
 export {
+    namespaced,
     state,
     mutations,
     actions,

@@ -1,5 +1,7 @@
 // const addNum = 'addNum';
 // const ADD_NUM = 'ADD_NUM';
+
+
 const state = {
     num:100
 }
@@ -18,8 +20,12 @@ const getters = {
         return state.num + 200;
     }
 }
+
+// namespaced不能改变
+const namespaced = true;
+
 export {
-    // namespaced:true,
+    namespaced,
     state,
     mutations,
     actions,

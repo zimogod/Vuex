@@ -14,6 +14,7 @@ const store = new Vuex.Store({
         money,
     }
 })
+console.log(store)
 export default store;
 
 
