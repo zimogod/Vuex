@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <zimo-btn types="primary">紫漠的按钮</zimo-btn>
+    <!-- <zimo-btn types="primary">紫漠的按钮</zimo-btn>
     <zimo-btn types="success">成功按钮</zimo-btn>
     <zimo-btn types="info">灰色按钮</zimo-btn>
     <zimo-btn types="warning" size="medium">警告按钮</zimo-btn>
     <zimo-btn types="primary" size="small">常用按钮</zimo-btn>
     <zimo-btn types="success" size="mini">成功按钮</zimo-btn>
-    <zimo-btn types="info">灰色按钮</zimo-btn>
+    <zimo-btn types="info">灰色按钮</zimo-btn> -->
     <!-- <zimo-btn types="warning">警告按钮</zimo-btn>
     <zimo-btn types="primary">常用按钮</zimo-btn>
     <zimo-btn types="success">成功按钮</zimo-btn>
@@ -32,15 +32,15 @@
     <!-- 通过commit提交mutations中的方法 -->
     <!-- <button @click="$store.commit('addNum',10)">mutations+10</button> -->
     <!-- <button @click="addNum(10)">mutations+10</button> -->
-  <el-checkbox-group v-model="checkList">
+  <!-- <el-checkbox-group v-model="checkList">
     <el-checkbox label="复选框 A"></el-checkbox>
     <el-checkbox label="复选框 B"></el-checkbox>
     <el-checkbox label="复选框 C"></el-checkbox>
     <el-checkbox label="禁用"></el-checkbox>
     <el-checkbox label="选中且禁用"></el-checkbox>
   </el-checkbox-group>
-    
-    <el-date-picker
+     -->
+    <!-- <el-date-picker
       v-model="value1"
       type="date"
       placeholder="选择日期">
@@ -56,8 +56,8 @@
     <button @click="homeAdd(10)">home同步+10</button>
 
     <button @click="ADD(2)">money异步+2</button>
-    <button @click="add(2)">money同步+2</button>
-
+    <button @click="add(2)">money同步+2</button> -->
+    <router-view></router-view>
   </div>
 </template>
 

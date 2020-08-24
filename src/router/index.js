@@ -6,6 +6,11 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes:[
         {
+            path:'/',
+            name:'home',
+            component: () => import('../components/home.vue')
+        },
+        {
             path:'/child',
             name:'child',
             component: () => import('../components/child.vue')

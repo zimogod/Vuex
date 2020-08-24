@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import zimoBtn from './client/button/button';
+// import zimoBtn from './btn/btn';
+// console.log(zimoBtn)
+// import zimoBtn from './client/button/button';
 import {
   Button,
   CheckboxGroup,
@@ -12,7 +14,8 @@ import router from './router';
 
 // console.log(zimoBtn,'===')
 import store from './store';
-Vue.use(zimoBtn);
+// Vue.use(zimoBtn);
+// Vue.use(zimoBtn);
 Vue.use(Button);
 Vue.use(CheckboxGroup);
 Vue.use(Checkbox);
